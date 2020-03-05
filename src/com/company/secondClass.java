@@ -4,12 +4,11 @@ import java.util.Arrays;
 
 class Solution2 {
     public void rotate(int[] nums, int k) {
-        if (nums.length > k-1){
-            int[] resultReverseAll = reverse(nums,0,nums.length-1);
-            int[] resultReverseHead = reverse(resultReverseAll,0,k-1);
-            int[] resultReverseFoot = reverse(resultReverseHead,k,resultReverseHead.length-1);
-            nums = resultReverseFoot;
-        }
+        k = k % nums.length;
+        int[] resultReverseAll = reverse(nums,0,nums.length-1);
+        int[] resultReverseHead = reverse(resultReverseAll,0,k-1);
+        int[] resultReverseFoot = reverse(resultReverseHead,k,resultReverseHead.length-1);
+        nums = resultReverseFoot;
 
     }
 
