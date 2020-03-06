@@ -1,8 +1,16 @@
 package com.company;
 
-import java.util.Arrays;
-
 class Solution2 {
+    public void rotate2(int[] nums, int k) {
+        int[] temp = new int[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            temp[(i+k) % nums.length] = nums[i];
+        }
+        for (int j = 0; j < temp.length; j++) {
+            nums[j] = temp[j];
+        }
+    }
+
     public void rotate(int[] nums, int k) {
         k = k % nums.length;
         int[] resultReverseAll = reverse(nums,0,nums.length-1);
