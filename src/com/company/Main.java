@@ -16,14 +16,18 @@ public class Main {
 //        int[] testArray = {1,2,3,5,7,8};
 //        solution2.rotate2(testArray,2);
 //        System.out.println(Arrays.toString(testArray));
-        //第四课
-        mergeSortedArray me = new mergeSortedArray();
-        int[] nums1 = {1,2,3,0,0,0};
-        int m = 3;
-        int n = 3;
-        int[] nums2 = {2,5,6};
-        me.merge(nums1,m,nums2,n);
-        System.out.println(Arrays.toString(nums1));
+//        //第四课
+//        mergeSortedArray me = new mergeSortedArray();
+//        int[] nums1 = {1,2,3,0,0,0};
+//        int m = 3;
+//        int n = 3;
+//        int[] nums2 = {2,5,6};
+//        me.merge(nums1,m,nums2,n);
+//        System.out.println(Arrays.toString(nums1));
+        //第五课
+        twoSum twosum = new twoSum();
+        int[] nums = {2,1,2,1};
+        System.out.println(Arrays.toString(twosum.twoSum(nums,2)));
 
     }
 
