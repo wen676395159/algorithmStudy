@@ -24,10 +24,14 @@ public class Main {
 //        int[] nums2 = {2,5,6};
 //        me.merge(nums1,m,nums2,n);
 //        System.out.println(Arrays.toString(nums1));
-        //第五课
-        twoSum twosum = new twoSum();
-        int[] nums = {2,1,2,1};
-        System.out.println(Arrays.toString(twosum.twoSum(nums,2)));
+//        //第五课
+//        twoSum twosum = new twoSum();
+//        int[] nums = {2,1,2,1};
+//        System.out.println(Arrays.toString(twosum.twoSum(nums,2)));
+        //第六课
+        plusOne plusOne = new plusOne();
+        int[] nums = {9,9,9};
+        System.out.println(Arrays.toString(plusOne.plusOne(nums)));
 
     }
 
