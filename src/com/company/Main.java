@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Arrays;
-
 public class Main {
 
 
@@ -28,10 +26,21 @@ public class Main {
 //        twoSum twosum = new twoSum();
 //        int[] nums = {2,1,2,1};
 //        System.out.println(Arrays.toString(twosum.twoSum(nums,2)));
-        //第六课
-        plusOne plusOne = new plusOne();
-        int[] nums = {9,9,9};
-        System.out.println(Arrays.toString(plusOne.plusOne(nums)));
+//        //第六课
+//        plusOne plusOne = new plusOne();
+//        int[] nums = {9,9,9};
+//        System.out.println(Arrays.toString(plusOne.plusOne(nums)));
+        //第七课
+        MyCircularDeque myCircularDeque = new MyCircularDeque(3);
+        System.out.println(myCircularDeque.insertLast(1));			        // 返回 true
+        System.out.println(myCircularDeque.insertLast(2));			        // 返回 true
+        System.out.println(myCircularDeque.insertFront(3));			        // 返回 true
+        System.out.println(myCircularDeque.insertFront(4));			        // 已经满了，返回 false
+        System.out.println(myCircularDeque.getRear());  				// 返回 2
+        System.out.println(myCircularDeque.isFull());				        // 返回 true
+        System.out.println(myCircularDeque.deleteLast());			        // 返回 true
+        System.out.println(myCircularDeque.insertFront(4));			        // 返回 true
+        System.out.println(myCircularDeque.getFront());
 
     }
 
