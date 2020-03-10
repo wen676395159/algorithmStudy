@@ -29,9 +29,15 @@ public class Main {
 //        int[] nums = {2,1,2,1};
 //        System.out.println(Arrays.toString(twosum.twoSum(nums,2)));
         //第六课
-        plusOne plusOne = new plusOne();
-        int[] nums = {9,9,9};
-        System.out.println(Arrays.toString(plusOne.plusOne(nums)));
+//        plusOne plusOne = new plusOne();
+//        int[] nums = {9,9,9};
+//        System.out.println(Arrays.toString(plusOne.plusOne(nums)));
+        removeElement removeElement = new removeElement();
+        int[] nums = {3,2,2,3};
+        int result = removeElement.removeElement(nums,3);
+        System.out.println(result);
+        System.out.println(Arrays.toString(nums));
+
 
     }
 
